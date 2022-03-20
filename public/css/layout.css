@@ -1,0 +1,119 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+input{
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+#navbar{
+    background-color: #4682B4;
+    color: white;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+}
+.division{
+    margin-bottom: 30px;
+}
+#appTitle{
+    text-decoration: none;
+    color: white;
+}
+#appTitle:hover{
+    text-decoration: none;
+    color: white;
+}
+#formBusca{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#inputBusca{
+    width: 500px;
+    height: 50px;
+    margin-top: 0.5px;
+    border-radius: 0;
+    border: 0.5px solid black;
+    padding: 5px;
+}
+#buttonBusca{
+    height: 50px;
+    border-radius: 0;
+}
+#addButton{
+    height: 50px;
+}
+#page{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+    margin-bottom: 180px;
+}
+.contato{
+    background-color: #CAE1FF;
+    color: black;
+    width: 95%;
+    height: 50px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+
+.contatoInfo{
+    width: 20%;
+}
+.options{
+    width: 10%;
+    text-align: center;
+}
+
+#pageTitle{
+    font-size: 3em;
+}
+#footer{
+    height: 50px;
+    width: 100%;
+    bottom: 0;
+    margin-top: 100px;
+    background-color: #4682B4;
+    color: white;
+    padding: 10px;
+    font-size: 1.2em;
+}
+#errorMessage{
+    background-color:#FFA07A;
+    color: #B22222;
+    border-color: #B22222;
+}
+#noContactsMessage{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.inputForm{
+    width: 500px;
+    height: 50px;
+}
+#buttonForm{
+    width: 500px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}

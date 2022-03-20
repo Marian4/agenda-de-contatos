@@ -1,0 +1,18 @@
+<div class="division"><h1 class="display-4" id="pageTitle">Contatos</h1></div>
+<div class="division">
+<form id="formBusca" action="/buscarContato" method="POST">
+    <input id="inputBusca" name="keyword" type="text" placeholder="Digite um nome ou um telefone">
+    <button type="submit" class="btn btn-info" id="buttonBusca">Buscar Contato</button>
+</form>
+</div>
+<div class="division">
+<form action="/adicionar" method="GET">
+    <button type="submit" class="btn btn-success" id="addButton">+ Adicionar Contato</button>
+</form>
+</div>
+{{#if noContacts}}
+<h1 id="noContactsMessage">Não encontramos nenhum contato :(</h1>
+{{/if}}
+{{#each contatos}}
+    {{>contato}}
+{{/each}}

@@ -1,0 +1,19 @@
+<div class="contato">
+    <table>
+        <tr>
+            <td class="contatoInfo">{{this.nome}}</td>
+            <td class="contatoInfo">{{this.sobrenome}}</td>
+            <td class="contatoInfo">{{this.telefone}}</td>
+            <td class="contatoInfo">{{this.email}}</td>
+            <td class="options">
+                <form action="/{{this.nome}}" method="GET">
+                    <button type="submit" class="btn btn-outline-dark">Editar contato</button>
+                </form></td>
+            <td class="options">
+                <form action="/deletarContato/{{this.id}}" method="POST">
+                    <button type="submit" class="btn btn-outline-dark">Excluir</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+</div>

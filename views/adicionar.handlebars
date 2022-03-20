@@ -1,0 +1,25 @@
+<div class="division">
+    <h1 class="display-4" id="pageTitle">Adicionar contato</h1>
+</div>
+{{#if notValidated}}
+<div class="alert alert-warning alert-dismissible fade show" role="alert" id="errorMessage">
+  É obrigatório preencher os campos de nome e telefone para finalizar o registro!
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+{{/if}}
+<div class="division">
+<form action="/adicionar" method="POST" >
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome" class="inputForm">
+    <label for="sobrenome">Sobrenome:</label>
+    <input type="text" name="sobrenome" class="inputForm">
+    <label for="telefone">Telefone:</label>
+    <input type="text" name="telefone" class="inputForm">
+    <label for="email">Email:</label>
+    <input type="email" name="email" class="inputForm">
+    <button type="submit" class="btn btn-info" id="buttonForm">Salvar</button>
+</form>
+</div>
+<a href="/">Voltar para home</a>
